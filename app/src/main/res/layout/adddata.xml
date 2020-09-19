@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMPLOYEE FORM"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:background="#0FD3EC"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:text="Name" />
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="350dp"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:inputType="textShortMessage"/>
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/text_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20sp"
+                    android:text="Gender" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="male" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Female" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/text_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:text="Email" />
+                <EditText
+                    android:id="@+id/edit_mail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="textEmailAddress"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/text_saraly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:text="Saraly" />
+                <EditText
+                    android:id="@+id/edit_saraly"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/adddata"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#80E100"
+                    android:textSize="18sp"
+                    android:text="ADD"
+                    android:onClick="adddata"/>
+
+                <Button
+                    android:id="@+id/cencel"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="28dp"
+                    android:textSize="15sp"
+                    android:background="#FF1FF4"
+                    android:text="CANCEL"
+
+                    android:layout_toRightOf="@id/adddata"
+                    android:onClick="cencel" />
+            </RelativeLayout>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
